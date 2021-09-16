@@ -8,7 +8,7 @@ class PageBar extends React.Component {
         this.props.onChangePage(newPage);
     }
     handleChangeRowsPerPage = async (e) => {
-        this.setState({ rowsPerPage: e.target.value });
+        await this.setState({ rowsPerPage: e.target.value });
         this.props.onChangeRowsPerPage(e.target.value);
     }
     render() {
